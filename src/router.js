@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Cars from './views/Cars.vue'
 import Homes from './views/Homes.vue'
+import Jobs from './views/Jobs.vue'
 
 Vue.use(Router)
 
@@ -17,6 +18,13 @@ export default new Router({
       name: 'homes',
       component: function () {
         return import(/* webpackChunkName: "about" */ './views/Homes.vue')
+      }
+    },
+    {
+      path: '/jobs',
+      name: 'jobs',
+      component: function () {
+        return import(/* webpackChunkName: "about" */ './views/Jobs.vue')
       }
     },
     {
