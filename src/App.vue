@@ -4,7 +4,7 @@
     <div id="nav">
       <router-link to="/cars">Cars</router-link>|
       <router-link to="/jobs">Jobs</router-link>|
-      <router-link to="/houses">Houses</router-link>|
+      <router-link to="/homes">Houses</router-link>|
       <router-link to="/about">About</router-link>
     </div>
     <router-view />
