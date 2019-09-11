@@ -1,6 +1,6 @@
 <template>
   <div class="house">
-    House Deets
+    House Stuff
     <h1>{{house.make}}</h1>
     <h5>{{house.model}}</h5>
     <h5>{{house.year}}</h5>
@@ -30,9 +30,9 @@ export default {
     }
   },
   methods: {
-    // removeHouse() {
-    //   this.$store.dispatch("removeHouse", this.home._id);
-    // }
+    removeHouse() {
+      this.$store.dispatch("removeHouse", this.house._id);
+    }
   },
   components: {}
 };

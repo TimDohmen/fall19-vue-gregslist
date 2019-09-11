@@ -87,6 +87,15 @@ export default new Vuex.Store({
         console.error(error)
 
       }
+    },
+    async removeHouse({ dispatch }, payload) {
+      try {
+        let res = await api.delete('/houses/' + payload)
+        dispatch('getHomes')
+        router.push({ name: 'homes' })
+      } catch (error) {
+
+      }
     }
 
   }
