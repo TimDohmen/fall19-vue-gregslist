@@ -23,7 +23,9 @@ export default {
     }
   },
   methods: {},
-  components: {}
+  components: {
+    Job
+  }
 };
 </script>
 

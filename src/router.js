@@ -58,6 +58,13 @@ export default new Router({
       }
     },
     {
+      path: '/jobs/:jobId',
+      name: 'job',
+      component: function () {
+        return import(/* webpackChunkName: "car" */ './views/Job.vue')
+      }
+    },
+    {
       path: '*',
       redirect: '/cars'
     }
